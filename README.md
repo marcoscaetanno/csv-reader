@@ -6,12 +6,13 @@
 - python sdk installed on your machine
 - Docker and docker-compose
 
-###Run locally
-#####First step
+## Run locally
+
+### First step
 - go to directory docker-compose and run this command:
 > docker-compose up -d
 
-####Second step
+### Second step
 - back to root project folder, and run the command to start the api:
 > uvicorn controller:app --reload
 - The api run by default on http://localhost:8000
