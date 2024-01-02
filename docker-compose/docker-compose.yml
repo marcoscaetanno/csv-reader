@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres
+    #volumes:
+      # - ./database/create-table.sql:/docker-entrypoint-initdb.d/create-table.sql
+    environment:
+      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_USER: "postgres"
+      POSTGRES_DB: "imports"
+    ports:
+      - "5432:5432"
